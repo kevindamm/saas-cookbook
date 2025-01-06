@@ -1,6 +1,8 @@
-This repo's contents are a combination of: 
+Contents of the open source repo are a combination of: 
 
- - MIT license for the source code, except the writings found under `/docs`
+ - MIT license for the source code (
+   [repo](https://github.com/kevindamm/edge-saas)
+   ), except the writings found under `/docs`
 
  - BSD-3-Clause license for the text of the tutorials
    (writings found under `/docs`)
@@ -15,7 +17,7 @@ copying of the tutorial contents must retain the copyright and include its
 disclaimers.
 
 However, I retain a different license on the source code because I want it to
-be as convenient as possible for the code itself to be reused.  Thus, any
+be as convenient as possible for the code itself to be reused.  However, any
 reference to the source code as instructive or any attempt to use the source
 code's origin (this tutorial site) to endorse or promote your product, would be
 referring as well to the tutorial writings and be included in the above
@@ -27,7 +29,7 @@ Repackaging of *just* the source code can be done with the MIT license alone.
 
 ## MIT License
 
-Copyright (c) 2025 Kevin Damm
+Copyright &copy; 2025, Kevin Damm
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -50,7 +52,7 @@ SOFTWARE.
 
 ## BSD-3-Clause License
 
-Copyright (c) 2025, Kevin Damm
+Copyright &copy; 2025, Kevin Damm
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
