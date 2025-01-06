@@ -1,14 +1,16 @@
 Contents of the open source repo are a combination of: 
 
- - MIT license for the source code (
+ - _MIT License_ for the source code (
    [repo](https://github.com/kevindamm/edge-saas)
-   ), except the writings found under `/docs`
+   ), except for the writings found under `/docs`
 
- - BSD-3-Clause license for the text of the tutorials
-   (writings found under `/docs`)
+ - _BSD-3-Clause License_ for the text of the tutorials
+   (the writings found under `/docs` in the repo)
 
 Wherever possible, this will be clarified by including the MIT license terms
-in the source code file when it applies, and likewise for the BSD-3-Clause.
+in the source code file when it applies, and likewise for the BSD-3-Clause.  Any
+vendored code will have its license specified in its source directory or in the
+parent directory, and should be considered separate from the above Licenses.
 
 I do not grant the permission to use the writings of this blog to endorse or
 promote products derived from them, and for this restriction to apply for any
@@ -17,7 +19,7 @@ copying of the tutorial contents must retain the copyright and include its
 disclaimers.
 
 However, I retain a different license on the source code because I want it to
-be as convenient as possible for the code itself to be reused.  However, any
+be as convenient as possible for the code itself to be reused.  Thus, any
 reference to the source code as instructive or any attempt to use the source
 code's origin (this tutorial site) to endorse or promote your product, would be
 referring as well to the tutorial writings and be included in the above
