@@ -27,7 +27,7 @@
 		"allowSyntheticDefaultImports": true,
 		"forceConsistentCasingInFileNames": true
 	},
-	"exclude": ["test"],
+	"exclude": ["test/**/*"],
 	"include": [
 		"src/**/*.html",
 		"src/**/favicon.ico",
