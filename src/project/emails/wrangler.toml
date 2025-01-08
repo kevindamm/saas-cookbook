@@ -1,0 +1,7 @@
+name = "project-emails"
+main = "home.ts"
+compatibility_date = "2025-01-01"
+
+[[env.production.vars]]
+COMPANY_NAME = "Janken Co."
+PRODUCT_NAME = "Rock-Paper-Scissors Royale"
