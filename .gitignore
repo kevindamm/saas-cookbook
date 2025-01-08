@@ -1,7 +1,7 @@
 # prod
 dist/
-docs/.vitepress/cache
-docs/.vitepress/dist
+book/.vitepress/cache
+book/.vitepress/dist
 
 # dev
 .yarn/

@@ -71,7 +71,9 @@ when expanded or when certain embedded forms are populated.  I've tried to keep
 the material useful to others despite it being mostly a fancy way of keeping
 notes.  This usually helps 6-months-plus future me, as well.
 
-<!-- TODO also, the checklists are persisted in localStorage so that you can work through the tutorials in multiple sittings, or as time allows -->
+<!-- TODO Also, the checklists are persisted in localStorage so that you can work
+through the tutorial/checklist in multiple sessions, or as time allows.
+-->
 
 
 <details>

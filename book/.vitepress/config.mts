@@ -50,21 +50,21 @@ export default defineConfig({
       { text: 'Project Setup',
         link: '/1-project',
         items: [
-          { text: 'Create a Project', link: '/project/setup' },
-          { text: 'Install Dependencies', link: '/project/deps' },
-          { text: 'Promotional Site', link: '/project/promo' },
-          // { text: 'Asset Serving', link: '/project/assets' },
-          // { text: 'Email Collection', link: '/project/emails' },
-          // { text: 'Vote Polling', link: '/project/votes' }
+          { text: 'Getting Started', link: '/project/start' },
+          { text: 'Promotional Site (Pages)', link: '/project/promo' },
+          // { text: 'Asset Serving (Workers + R2)', link: '/project/assets' },
+          // { text: 'Article Comments (Workers + D1)', link: '/project/emails' },
+          // { text: 'Email Collection (Workers + D1 + privacy)', link: '/project/emails' },
+          // { text: 'Vote Polling (Workers + KV + D1)', link: '/project/votes' }
         ]},
 
       { text: '2. Realtime Updates',
         link: '/2-realtime',
         // items: [
-        //   { text: 'SSE stream visitor emotes', link: '/realtime/visitors' },
-        //   { text: 'WebSockets without storage', link: '/realtime/ws-simple'},
-        //   { text: 'WebSockets with storage', link: '/realtime/ws-chatrooms'},
-        //   { text: 'WebRTC for peer streaming', link: '/realtime/webrtc' }
+        //   { text: 'Emote Stream (Durable Objects + SSE)', link: '/realtime/visitors' },
+        //   { text: 'RateLimiter (WebSockets + DO volatile)', link: '/realtime/ratelimiter' },
+        //   { text: 'Chat Rooms (WebSockets + DO nonvolatile) ', link: '/realtime/chatparty' },
+        //   { text: 'Videoconference (WebRTC peer + bridge)', link: '/realtime/webrtc' }
         // ]
       },
 

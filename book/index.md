@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /1-project-setup
+      link: /1-project
     - theme: alt
       text: Introduction
       link: /0-intro
