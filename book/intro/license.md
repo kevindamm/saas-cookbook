@@ -7,4 +7,4 @@ lastUpdated:
 
 # {{ $frontmatter.title }}
 
-<!--@include: ../../LICENSE-->
+<!--@include: ../../LICENSE.md-->
