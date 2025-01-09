@@ -14,7 +14,7 @@ hero:
       link: /0-intro
     - theme: alt
       text: Objectives
-      link: /0-intro-objectives
+      link: /intro/objectives
 
 features:
   - title: Low Cost Solutions
