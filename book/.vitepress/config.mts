@@ -25,7 +25,7 @@
 // OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 // 
-// github:kevindamm/edge-saas/docs/.vitepress/config.mts
+// github:kevindamm/edge-saas/book/.vitepress/config.mts
 
 import { defineConfig } from 'vitepress'
 
@@ -33,6 +33,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Edge SaaS Tutorials",
   description: "using Cloudflare, TypeScript and Hono",
+  cleanUrls: true,
   themeConfig: { // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '', link: '' },
@@ -92,8 +93,9 @@ export default defineConfig({
         link: '/5-games',
         // items: [
         //   { text: 'Janken match', link: '/games/janken' },
-        //   { text: 'Multi-Janken (lobby chat)', link: '/games/chat' },
+        //   { text: 'Janken tourney (lobby chat)', link: '/games/chat' },
         //   { text: 'Janken Royale (team chat)', link: '/games/teams' },
+        //   { text: 'Tic-Tac-Trivia (voice chat), link: '/games/t3rivia' },
         //   { text: 'Developing with LÖVE', link: '/games/love' }
         // ]
       },
@@ -103,6 +105,7 @@ export default defineConfig({
         // items: [
         //   { text: 'Image serving, optimizing', link: '/frontend/images' },
         //   { text: 'HTMX and interaction', link: '/frontend/htmx' },
+        //   { text: 'SEO Considerations', link: '/frontend/seo' },
         //   { text: 'Every form needs CSRF', link: '/frontend/csrf' },
         //   { text: 'Streaming video content', link: '/frontend/video' }
         // ]
@@ -137,5 +140,15 @@ export default defineConfig({
 //        ariaLabel: 'Demo Site'
 //      }
     ]
-  }
+  },
+  head: [
+    [ 'link',
+      { rel: 'icon', href: '/favicon.ico' }],
+    [ 'link',
+      { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
+    [ 'link',
+      { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
+    [ 'link',
+      { href: 'https://fonts.googleapis.com/css2?family=Roboto&display=swap', rel: 'stylesheet' }]
+  ]
 })
