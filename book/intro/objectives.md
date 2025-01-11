@@ -5,7 +5,8 @@ author: Kevin Damm
 
 # {{ $frontmatter.title }}
 
-...
+...TODO lead in
+
 
 the feature set of what I refer to here as **edge computing**,
 platforms that are also known as _serverless_ or _scales-to-zero_ or _demand-based pricing_.
@@ -18,7 +19,7 @@ dynamically, in response to demand.
 The topics covered here are broad and complex, dealing with the full stack of
 _Sofware as a Service_ and rich feature set of edge computing.  You are likely
 to learn something in its contents -- I sure did while writing it! -- and I've
-tried to keep it short and sweet and complete at the topmost level.
+tried to keep it short and sweet and complete at the topmost level of `details`.
 
 Where outside expertise is needed (e.g., drafting the policy terms or handling
 payment specifics) these tutorials will not give answers, but the topic will be

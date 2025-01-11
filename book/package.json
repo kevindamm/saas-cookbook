@@ -1,0 +1,44 @@
+{
+  "name": "edge-saas-book",
+  "version": "0.5.5",
+  "description": "Tutorials and Recipes for SaaS using Hono, deployed on Cloudflare.",
+  "scripts": {
+    "test": "vitest",
+    "book:dev": "vitepress dev .",
+    "book:build": "vitepress build .",
+    "book:preview": "vitepress preview ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevindamm/edge-saas.git"
+  },
+  "keywords": [
+    "saas",
+    "tutorials",
+    "hono",
+    "typescript",
+    "cloudflare",
+    "serverless",
+    "chat",
+    "websockets",
+    "games",
+    "security",
+    "workers",
+    "pages",
+    "durable objects",
+    "D1",
+    "R2",
+    "KV"
+  ],
+  "author": "Kevin Damm",
+  "license": "BSD-3-Clause",
+  "devDependencies": {
+    "@tsconfig/strictest": "^2.0.5",
+    "typescript": "^5.5.2",
+    "vitepress": "^1.5.0",
+    "vitest": "2.1.8"
+  },
+  "engines": {
+    "node": ">=18.20.0"
+  }
+}
