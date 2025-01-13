@@ -1,12 +1,12 @@
 {
   "name": "edge-saas-book",
-  "version": "0.5.5",
+  "version": "0.5.9",
   "description": "Tutorials and Recipes for SaaS using Hono, deployed on Cloudflare.",
   "scripts": {
-    "test": "vitest",
     "book:dev": "vitepress dev .",
     "book:build": "vitepress build .",
-    "book:preview": "vitepress preview ."
+    "book:preview": "vitepress preview .",
+    "test": "vitest"
   },
   "repository": {
     "type": "git",

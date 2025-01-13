@@ -1,0 +1,10 @@
+name = "edge-saas-book"
+pages_build_output_dir = ".vitepress/dist"
+compatibility_date = "2024-12-18"
+
+[env.production]
+# must be a verified address on your Cloudflare account
+EMAIL_TO = "{{ ADMIN_EMAIL }}"
+
+[env.local]
+EMAIL_TO = "notify@example.com"
