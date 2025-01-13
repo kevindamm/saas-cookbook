@@ -105,7 +105,6 @@ export default defineConfig({
         // items: [
         //   { text: 'Image serving, optimizing', link: '/frontend/images' },
         //   { text: 'HTMX and interaction', link: '/frontend/htmx' },
-        //   { text: 'SEO Considerations', link: '/frontend/seo' },
         //   { text: 'Every form needs CSRF', link: '/frontend/csrf' },
         //   { text: 'Streaming video content', link: '/frontend/video' }
         // ]
@@ -119,6 +118,26 @@ export default defineConfig({
         //   { text: 'Allocation', link: '/tooling/allocate' },
         //   { text: 'Moderation', link: '/tooling/moderate' },
         //   { text: 'Policy-Forward', link: '/tooling/policy-forward' }
+        // ]
+      },
+
+      { text: '8. Markets and Marketing',
+        link: '8-market',
+        // items: [
+        //   { text: 'Identify Your Market', link: '/market/identify' },
+        //   { text: 'Establish Authority', link: '/market/authority' },
+        //   { text: 'Conduct User Research', link: '/market/survey' },
+        //   { text: 'Pricing Experiments', link: '/market/pricing' },
+        // ]
+      },
+
+      { text: '9. Productionization',
+        link: '9-product',
+        // items: [
+        //   { text: 'Observability', link: '/product/observe' },
+        //   { text: 'Monitoring', link: '/product/monitor' },
+        //   { text: 'Alerting', link: '/product/pager-alert' },
+        //   { text: 'Reporting', link: '/product/report' },
         // ]
       }
     ],
