@@ -1,8 +1,7 @@
 ---
-title: Getting Started
+title: Cloudflare Pages
 author: Kevin Damm
 ---
 
 # {{ $frontmatter.title }}
-
 
