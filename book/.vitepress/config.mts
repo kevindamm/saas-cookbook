@@ -52,45 +52,62 @@ export default defineConfig({
         link: '/1-project',
         items: [
           { text: 'Getting Started', link: '/project/start' },
-          { text: 'Promotional Site (Pages)', link: '/project/promo' },
-          // { text: 'Asset Serving (Workers + R2)', link: '/project/assets' },
-          // { text: 'Article Comments (Workers + D1)', link: '/project/emails' },
-          // { text: 'Email Collection (Workers + D1 + privacy)', link: '/project/emails' },
-          // { text: 'Vote Polling (Workers + KV + D1)', link: '/project/votes' }
+          { text: 'Development Setup', link: '/project/develop' },
+          { text: 'Accounts Setup', link: '/project/accounts' },
+          { text: 'Promotional Site', link: '/project/promo' },
+        ]},
+      { text: 'Pages',
+        link: '/2-pages',
+        items: [
+          // { text: 'Asset Serving (Workers + R2)', link: '/pages/assets' },
+          // { text: 'Article Comments (Workers + D1)', link: '/pages/comments' },
+          // { text: 'Vote Polling (Workers + KV + D1)', link: '/pages/votes' }
+          // { text: 'Email Subscriptions (Workers + D1 + privacy)', link: '/project/emails' },
+        ]},
+      { text: 'Workers and Durable Objects',
+        link: '/3-workers',
+        items: [
+        ]},
+      { text: 'System Design',
+        link: '/4-system',
+        items: [
+        ]},
+      { text: 'Security',
+        link: '/5-security',
+        items: [
+        ]},
+      { text: 'Trust and Safety',
+        link: '/6-safety',
+        items: [
+        //   { text: 'Privacy', link: '/safety/privacy' },
+        //   { text: 'Moderation', link: '/safety/moderate' },
+        ]},
+      { text: 'Game Services',
+        link: '/7-games',
+        items: [
         ]},
 
-      { text: '2. Realtime Updates',
-        link: '/2-realtime',
         // items: [
         //   { text: 'Emote Stream (Durable Objects + SSE)', link: '/realtime/visitors' },
         //   { text: 'RateLimiter (WebSockets + DO volatile)', link: '/realtime/ratelimiter' },
         //   { text: 'Chat Rooms (WebSockets + DO nonvolatile) ', link: '/realtime/chatparty' },
         //   { text: 'Videoconference (WebRTC peer + bridge)', link: '/realtime/webrtc' }
         // ]
-      },
 
-      { text: '3. Protecting Sensitive Data',
-        link: '/3-protect',
         // items: [
         //   { text: 'TLS (secure channels)', link: '/protect/tls' },
         //   { text: 'JWT (trust tokens)', link: '/protect/jwt' },
         //   { text: 'bcrypt (no passwords in DB)', link: '/protect/bcrypt' },
         //   { text: 'AES (encrypting storage)', link: '/protect/aes' }
         // ]
-      },
 
-      { text: '4. Authentication and Authorization',
-        link: '/4-auth',
         // items: [
         //   { text: 'Email Validation', link: '/authn/email' },
         //   { text: 'Open Authentication', link: '/authn/oauth' },
         //   { text: 'Authorization (ACLs)', link: '/authz/acls' },
         //   { text: 'Authorization (roles)', link: '/authz/roles' }
         // ]
-      },
     
-      { text: '5. Game Services',
-        link: '/5-games',
         // items: [
         //   { text: 'Janken match', link: '/games/janken' },
         //   { text: 'Janken tourney (lobby chat)', link: '/games/chat' },
@@ -98,46 +115,40 @@ export default defineConfig({
         //   { text: 'Tic-Tac-Trivia (voice chat), link: '/games/t3rivia' },
         //   { text: 'Developing with LÖVE', link: '/games/love' }
         // ]
-      },
       
-      { text: '6. Fronted Focus',
-        link: '/6-frontend',
         // items: [
         //   { text: 'Image serving, optimizing', link: '/frontend/images' },
         //   { text: 'HTMX and interaction', link: '/frontend/htmx' },
         //   { text: 'Every form needs CSRF', link: '/frontend/csrf' },
         //   { text: 'Streaming video content', link: '/frontend/video' }
         // ]
-      },
 
-      { text: '7. Continuous Tooling',
-        link: '/7-tooling',
+      { text: 'Billing',
+        link: '/8-billing',
+        items: [
+        ]},
+      { text: 'Inventory',
+        link: '/9-inventory',
+        items: [
+        ]},
+
+      { text: 'Production and Resources',
+        link: '/10-production',
         // items: [
         //   { text: 'Integration', link: '/tooling/integrate' },
         //   { text: 'Orchestration', link: '/tooling/orchestrate' },
         //   { text: 'Allocation', link: '/tooling/allocate' },
-        //   { text: 'Moderation', link: '/tooling/moderate' },
         //   { text: 'Policy-Forward', link: '/tooling/policy-forward' }
         // ]
       },
 
-      { text: '8. Markets and Marketing',
-        link: '8-market',
+      { text: 'Marketing and Analytics',
+        link: '/11-marketing',
         // items: [
         //   { text: 'Identify Your Market', link: '/market/identify' },
         //   { text: 'Establish Authority', link: '/market/authority' },
         //   { text: 'Conduct User Research', link: '/market/survey' },
         //   { text: 'Pricing Experiments', link: '/market/pricing' },
-        // ]
-      },
-
-      { text: '9. Productionization',
-        link: '9-product',
-        // items: [
-        //   { text: 'Observability', link: '/product/observe' },
-        //   { text: 'Monitoring', link: '/product/monitor' },
-        //   { text: 'Alerting', link: '/product/pager-alert' },
-        //   { text: 'Reporting', link: '/product/report' },
         // ]
       }
     ],
