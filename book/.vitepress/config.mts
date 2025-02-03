@@ -31,12 +31,13 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Edge SaaS Tutorials",
-  description: "using Cloudflare, TypeScript and Hono",
+  title: "Edge SaaS Cookbook",
+  description: "using Cloudflare, Hono and TypeScript",
   cleanUrls: true,
   themeConfig: { // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: '', link: '' },
+      { text: 'Home', link: '/' },
+      { text: 'Contents', link: '/toc' },
     ],
 
     sidebar: [
@@ -48,24 +49,28 @@ export default defineConfig({
           { text: 'Licensing', link: '/intro/license' }
         ]},
 
-      { text: 'Project Setup',
+      { text: 'Getting Started',
         link: '/1-project',
         items: [
-          { text: 'Getting Started', link: '/project/start' },
           { text: 'Development Setup', link: '/project/develop' },
           { text: 'Accounts Setup', link: '/project/accounts' },
           { text: 'Promotional Site', link: '/project/promo' },
         ]},
-      { text: 'Pages',
+      { text: 'Cloudflare Pages',
         link: '/2-pages',
         items: [
-          // { text: 'Asset Serving (Workers + R2)', link: '/pages/assets' },
-          // { text: 'Article Comments (Workers + D1)', link: '/pages/comments' },
-          // { text: 'Vote Polling (Workers + KV + D1)', link: '/pages/votes' }
-          // { text: 'Email Subscriptions (Workers + D1 + privacy)', link: '/project/emails' },
+          // { text: 'Asset Serving (Pages + R2)', link: '/pages/assets' },
+          // { text: 'Article Comments (Pages + D1)', link: '/pages/comments' },
+          // { text: 'Email Subscriptions (Pages + D1 + privacy)', link: '/pages/emails' },
+          // { text: 'Search Engine (Pages + D1 + indexing)', link: '/pages/search' },
         ]},
       { text: 'Workers and Durable Objects',
         link: '/3-workers',
+          // { text: 'Emote Stream (Workers + SSE)', link: '/workers/emotes' },
+          // { text: 'Vote Polling (Workers + DO + D1)', link: '/pages/votes' }
+          // { text: 'Authentication (Workers + KV + D1)}
+          // { text: 'Rate Limiter (Workers + DO volatile)', link: '/workers/ratelimiter' },
+          // { text: 'Chat Rooms (WebSockets + DO nonvolatile) ', link: '/workers/chatparty' },
         items: [
         ]},
       { text: 'System Design',
@@ -75,58 +80,40 @@ export default defineConfig({
       { text: 'Security',
         link: '/5-security',
         items: [
-        ]},
-      { text: 'Trust and Safety',
-        link: '/6-safety',
-        items: [
-        //   { text: 'Privacy', link: '/safety/privacy' },
-        //   { text: 'Moderation', link: '/safety/moderate' },
-        ]},
-      { text: 'Game Services',
-        link: '/7-games',
-        items: [
-        ]},
-
-        // items: [
-        //   { text: 'Emote Stream (Durable Objects + SSE)', link: '/realtime/visitors' },
-        //   { text: 'RateLimiter (WebSockets + DO volatile)', link: '/realtime/ratelimiter' },
-        //   { text: 'Chat Rooms (WebSockets + DO nonvolatile) ', link: '/realtime/chatparty' },
-        //   { text: 'Videoconference (WebRTC peer + bridge)', link: '/realtime/webrtc' }
-        // ]
-
-        // items: [
         //   { text: 'TLS (secure channels)', link: '/protect/tls' },
         //   { text: 'JWT (trust tokens)', link: '/protect/jwt' },
         //   { text: 'bcrypt (no passwords in DB)', link: '/protect/bcrypt' },
         //   { text: 'AES (encrypting storage)', link: '/protect/aes' }
-        // ]
+        ]},
 
-        // items: [
         //   { text: 'Email Validation', link: '/authn/email' },
         //   { text: 'Open Authentication', link: '/authn/oauth' },
         //   { text: 'Authorization (ACLs)', link: '/authz/acls' },
         //   { text: 'Authorization (roles)', link: '/authz/roles' }
-        // ]
-    
-        // items: [
-        //   { text: 'Janken match', link: '/games/janken' },
-        //   { text: 'Janken tourney (lobby chat)', link: '/games/chat' },
-        //   { text: 'Janken Royale (team chat)', link: '/games/teams' },
-        //   { text: 'Tic-Tac-Trivia (voice chat), link: '/games/t3rivia' },
-        //   { text: 'Developing with LÖVE', link: '/games/love' }
-        // ]
-      
-        // items: [
-        //   { text: 'Image serving, optimizing', link: '/frontend/images' },
-        //   { text: 'HTMX and interaction', link: '/frontend/htmx' },
-        //   { text: 'Every form needs CSRF', link: '/frontend/csrf' },
+
+      { text: 'Trust and Safety',
+        link: '/6-safety',
+        items: [
+          // { text: 'Privacy', link: '/safety/privacy' },
+          // { text: 'Moderation', link: '/safety/moderate' },
+          // { text: 'Every form needs CSRF', link: '/frontend/csrf' },
+        ]},
+      { text: 'Realtime Services',
+        link: '/7-realtime',
+        items: [
+        //   { text: 'Janken match', link: '/realtime/janken' },
+        //   { text: 'Janken tourney (lobby chat)', link: '/realtime/chat' },
+        //   { text: 'Janken Royale (team chat)', link: '/realtime/teams' },
+        //   { text: 'Tic-Tac-Trivia (voice chat), link: '/realtime/t3rivia' },
+        //   { text: 'Videoconference (WebRTC peer + bridge)', link: '/realtime/webrtc' }
         //   { text: 'Streaming video content', link: '/frontend/video' }
-        // ]
+        ]},
 
       { text: 'Billing',
         link: '/8-billing',
         items: [
         ]},
+
       { text: 'Inventory',
         link: '/9-inventory',
         items: [
