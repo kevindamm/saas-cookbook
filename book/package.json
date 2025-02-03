@@ -4,7 +4,7 @@
   "description": "Tutorials and Recipes for SaaS using Hono, deployed on Cloudflare.",
   "scripts": {
     "book:dev": "vitepress dev .",
-    "book:build": "vitepress build .",
+    "book:build": "vitepress build . && cp ./functions/* .vitepress/dist/functions/*",
     "book:preview": "vitepress preview .",
     "test": "vitest"
   },
