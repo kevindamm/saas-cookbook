@@ -4,7 +4,7 @@
   "description": "Tutorials and Recipes for SaaS using Hono, deployed on Cloudflare.",
   "scripts": {
     "book:dev": "vitepress dev .",
-    "book:build": "vitepress build . && cp ./functions/* .vitepress/dist/functions/*",
+    "book:build": "vitepress build .",
     "book:preview": "vitepress preview .",
     "test": "vitest"
   },
@@ -40,5 +40,9 @@
   },
   "engines": {
     "node": ">=18.20.0"
+  },
+  "dependencies": {
+    "@cloudflare/pages-plugin-static-forms": "^1.0.3",
+    "@cloudflare/workers-types": "^4.20250129.0"
   }
 }
