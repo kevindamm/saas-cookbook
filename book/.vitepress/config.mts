@@ -29,11 +29,18 @@
 
 import { defineConfig } from 'vitepress'
 
+const fileAndStyles: Record<string, string> = {}
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Edge SaaS Cookbook",
   description: "using Cloudflare, Hono and TypeScript",
   cleanUrls: true,
+  vite: {
+    ssr: {
+      noExternal: ['naive-ui', 'date-fns', 'vueuc']
+    }
+  },
   themeConfig: { // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
@@ -167,5 +174,28 @@ export default defineConfig({
       { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
     [ 'link',
       { href: 'https://fonts.googleapis.com/css2?family=Roboto&display=swap', rel: 'stylesheet' }]
-  ]
+  ],
+
+  postRender(context) {
+    const styleRegex = /<css-render-style>((.|\s)+)<\/css-render-style>/
+    const vitepressPathRegex = /<vitepress-path>(.+)<\/vitepress-path>/
+    const style = styleRegex.exec(context.content)?.[1]
+    const vitepressPath = vitepressPathRegex.exec(context.content)?.[1]
+    if (vitepressPath && style) {
+      fileAndStyles[vitepressPath] = style
+    }
+    context.content = context.content.replace(styleRegex, '')
+    context.content = context.content.replace(vitepressPathRegex, '')
+  },
+
+  transformHtml(code, id) {
+    const html = id.split('/').pop()
+    if (!html)
+      return
+  
+    const style = fileAndStyles[`${html}`]
+    if (style) {
+      return code.replace(/<\/head>/, `${style}\n</head>`)
+    }
+  }
 })
