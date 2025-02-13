@@ -21,4 +21,55 @@ This tutorial will show you how to build a basic promotional site and host it
 for free, with a handful of options each allowing you to link a custom domain
 to it, too.
 
-## ...
+## Local Dev
+
+TODO...
+
+## Pages (on github)
+
+TODO...
+
+<details><summary>Preview versions of site only on certain branch updates</summary>
+...</details>
+
+## Pages (Cloudflare)
+
+TODO... describe the direct (via `wrangler` tool) and automatic (continuously
+deployed when github branches update)
+
+
+### Deploy with `wrangler`
+
+
+### Continuous Deployment
+
+
+<details><summary>Preview versions of site only on certain branch updates</summary>
+...
+
+<details><summary>Why?</summary>
+If you are maintaining your application on the same branch, you may find that
+the continuous-deployment triggers even when there aren't any site-relevant
+updates.
+
+Your account with the host will have a limit to how many build runs it will do,
+and it will either stop running after that (until the next accounting
+window gives you quota) or start costing you more.
+</details>
+
+You then need to do any non-site development on branches that do not match these
+patterns.  For this book, I have a `dev-book` branch for chapter content updates
+and `dev-workers` for parts of the site that aren't in the statically-generated
+content.  I also have a wildcard `dev-book-*` rule for building preview
+versions of chapters as they are written.
+
+This way, `dev-book` can be pulled into `main` without triggering a site-update
+and `dev-workers` can be updated, and update `main`, as often as I want without
+worrying about running against my monthly quota.  For a team size greater than
+one this becomes even more likely, but even as a solo dev with a handful of
+projects, it's easier to define a narrow rule now, while setting up the CD
+process, rather than forget about it until it becomes an issue.
+
+</details>
+
+TODO ...rest of setup and testing it
