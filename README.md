@@ -1,8 +1,20 @@
-# SaaS Cookbook (source repository)
+# Supercloud SaaS Cookbook (source repository)
 
 A cookbook of SaaS recipes and guidance on system design, with a focus on
 economical use of cloud services and an attention to security, integrity,
 scalability and privacy.
+
+The term "Supercloud" was suggested by Cloudflare in 2022 to describe their
+particular flavor of hyperscaling cloud deployment that has excellent
+developer productivity.  And I agree, some of their features set them apart
+from other hyperscalers (GCP, AWS, Azure, et al.) especially their Durable
+Objects, their networking & security solutions, and their attention to tooling.
+The free bandwidth on their storage solution and very generous free tier in
+general are also appealing, and projects that want to call out to LLMs or
+be an MCP server for LLMs will find a lot of the build and deploy steps
+already taken care of.  In this book I will try to demonstrate these features
+that I particularly enjoy.  This isn't sponsored by Cloudflare, I'm just
+sharing what I've learned from their docs and from various experiments.
 
 ## Read, Build, Run
 
